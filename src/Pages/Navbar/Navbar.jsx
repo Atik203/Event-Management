@@ -14,6 +14,12 @@ const Navbar = () => {
       <li>
         <Link to={"/venue"}>Venue</Link>
       </li>
+      <li>
+        <Link to={"/vendor"}>Vendors</Link>
+      </li>
+      <li>
+        <Link to={"/e-invites"}>E-invites</Link>
+      </li>
     </>
   );
 
@@ -45,7 +51,7 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <Link to={"/"} className="text-3xl font-bold text-red-500">
+          <Link to={"/"} className="text-xl md:text-3xl font-bold text-red-500">
             Eternal Wed
           </Link>
         </div>
@@ -53,7 +59,10 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <Link to={"/login"} className="btn">
+          <Link
+            to={"/login"}
+            className="btn btn-primary text-white border-none hover:text-white hover:bg-gray-400 bg-red-500"
+          >
             Login
           </Link>
         </div>
