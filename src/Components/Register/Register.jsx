@@ -1,8 +1,6 @@
-import {
-  createUserWithEmailAndPassword,
-  sendEmailVerification,
-} from "firebase/auth";
-
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/Ai";
 import { Link } from "react-router-dom";
@@ -18,14 +16,53 @@ const Register = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
     const accepted = e.target.terms.checked;
+    const name = e.target.name.value;
+    const photo = e.target.photo.value;
+    const regex = /^(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]).*$/;
     if (password.length < 6) {
       setRegError("password should be at least 6 character or longer");
+      toast.error("password should be at least 6 character or longer", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
       return;
-    } else if (!/[A-Z]/.test(password)) {
-      setRegError("password should contain at least one Uppercase letter");
+    } else if (!regex.test(password)) {
+      setRegError(
+        "password should contain at least one Uppercase and special character letter"
+      );
+      toast.error(
+        "password should contain at least one Uppercase and special character letter",
+        {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        }
+      );
       return;
     } else if (!accepted) {
       setRegError("Please accept our terms and condition");
+      toast.error("Please accept our terms and condition", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+
       return;
     }
 
@@ -33,6 +70,16 @@ const Register = () => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((useCredential) => {
         const user = useCredential.user;
+        toast.success("Registration Completed Successfully", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
       })
       .catch((error) => setRegError(error.message));
   };
@@ -121,6 +168,7 @@ const Register = () => {
         </div>
         {RegError && <p className="text-red-500 font-medium">{RegError}</p>}
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };

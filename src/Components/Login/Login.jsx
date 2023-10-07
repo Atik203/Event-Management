@@ -1,15 +1,19 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
 
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/Ai";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../Firebase/firebase.config";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Login = () => {
   // const auth = getAuth(app);
   const [RegError, setRegError] = useState("");
   const [showPass, setshowPass] = useState(false);
   const emailRef = useRef(null);
+  const { signIn } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -24,11 +28,10 @@ const Login = () => {
       return;
     }
     setRegError("");
-    signInWithEmailAndPassword(auth, email, password)
+    signIn(email, password)
       .then((useCredential) => {
         const user = useCredential.user;
-        console.log(user);
-
+        navigate(location?.state ? location.state : "/");
         alert("login successfully");
       })
       .catch((error) => setRegError(error.message));
