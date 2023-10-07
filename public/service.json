@@ -4,41 +4,77 @@
     "name": "Photography & Video",
     "img": "https://i.ibb.co/wRbtM1q/photography.jpg",
     "price": "$2,000 - $5,000",
-    "short_description": "Capture your special moments with our professional photography and video services."
+    "description": "Capture your special moments with our professional photography and video services.",
+    "features": [
+      "High-quality cinematic video production",
+      "Experienced and creative photographers",
+      "Customizable photo albums"
+    ],
+    "detailed_description": "Our photography and video services go beyond capturing moments; they tell the story of your love. With a focus on creativity and professionalism, we ensure that your wedding memories are preserved in the most beautiful way possible. From candid shots to cinematic videos, we capture every detail that makes your day unique."
   },
   {
     "id": 2,
     "name": "Beauty & Makeup",
     "img": "https://i.ibb.co/cwTH8x0/makeup.jpg",
     "price": "$500 - $1,500",
-    "short_description": "Enhance your natural beauty with our expert beauty and makeup services for the bride and bridal party."
+    "description": "Enhance your natural beauty with our expert beauty and makeup services for the bride and bridal party.",
+    "features": [
+      "Professional makeup artists",
+      "Customized bridal makeup",
+      "Group packages for bridal party"
+    ],
+    "detailed_description": "Our beauty and makeup services are designed to make you look and feel your best on your special day. Our skilled makeup artists work with you to create a personalized look that enhances your natural beauty. Whether you prefer a classic or modern style, we ensure you radiate confidence and elegance."
   },
   {
     "id": 3,
     "name": "Wedding Cake",
     "img": "https://i.ibb.co/2kDfHjv/wedding-cake.jpg",
     "price": "$300 - $800",
-    "short_description": "Indulge in exquisite wedding cakes designed to match your theme and taste preferences."
+    "description": "Indulge in exquisite wedding cakes designed to match your theme and taste preferences.",
+    "features": [
+      "Custom cake designs",
+      "Variety of flavors and fillings",
+      "Delivery and setup services"
+    ],
+    "detailed_description": "Our wedding cakes are not just delicious; they are a work of art. From classic to contemporary designs, we create cakes that complement your wedding theme. Choose from a variety of flavors and fillings to delight your guests' taste buds. Our delivery and setup services ensure a stress-free experience on your big day."
   },
   {
     "id": 4,
     "name": "Catering",
     "img": "https://i.ibb.co/StF4jG3/catering.jpg",
     "price": "$5,000 - $15,000",
-    "short_description": "Delight your guests with a delectable spread of dishes tailored to your wedding style and preferences."
+    "description": "Delight your guests with a delectable spread of dishes tailored to your wedding style and preferences.",
+    "features": [
+      "Customized menu options",
+      "Professional catering staff",
+      "Attention to dietary restrictions"
+    ],
+    "detailed_description": "Our catering services are dedicated to making your wedding feast memorable. With customizable menu options and attention to dietary restrictions, we ensure that every guest enjoys a delicious meal. Our professional catering staff takes care of every detail, leaving you free to savor the moments with your loved ones."
   },
   {
     "id": 5,
     "name": "Jewellery",
     "img": "https://i.ibb.co/tmjPZD2/ring.jpg",
     "price": "$1,000 - $10,000",
-    "short_description": "Adorn yourself with exquisite bridal jewelry, enhancing your elegance on your special day."
+    "description": "Adorn yourself with exquisite bridal jewelry, enhancing your elegance on your special day.",
+    "features": [
+      "Handcrafted jewelry",
+      "Customizable designs",
+      "Bridal jewelry sets"
+    ],
+    "detailed_description": "Our bridal jewelry collection is crafted with precision and passion. From handcrafted pieces to customizable designs, we offer a range of options to suit your style. Elevate your elegance with our bridal jewelry sets that add a touch of sophistication to your wedding attire."
   },
   {
     "id": 6,
     "name": "Wedding Flowers",
     "img": "https://i.ibb.co/Ld98B3P/flowers.jpg",
     "price": "$500 - $2,000",
-    "short_description": "Transform your venue with beautiful floral arrangements, adding a touch of nature to your celebration."
+    "description": "Transform your venue with beautiful floral arrangements, adding a touch of nature to your celebration.",
+    "features": [
+      "Custom floral designs",
+      "Venue decoration services",
+      "Floral arches and bouquets"
+    ],
+    "detailed_description": "Our wedding flower services bring the beauty of nature to your celebration. From custom floral designs that match your theme to venue decoration services, we create an enchanting atmosphere. Walk down the aisle surrounded by the fragrance of beautiful floral arches and carry a bouquet that reflects the romance of your special day."
   }
 ]

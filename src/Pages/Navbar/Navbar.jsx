@@ -1,31 +1,62 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
 const Navbar = () => {
+  const { user, logout } = useContext(AuthContext);
+  const handleLogout = () => {
+    logout().then().catch();
+  };
+
   const links = (
     <>
       <li>
-        <Link to={"/"}>Home</Link>
+        <NavLink
+          to="/"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-[#FF444A] underline" : ""
+          }
+        >
+          Home
+        </NavLink>
       </li>
 
       <li>
-        <Link to={"/service"}>Service</Link>
+        <NavLink
+          to="/venue"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-[#FF444A] underline" : ""
+          }
+        >
+          Venue
+        </NavLink>
       </li>
-
       <li>
-        <Link to={"/venue"}>Venue</Link>
+        <NavLink
+          to="/vendor"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-[#FF444A] underline" : ""
+          }
+        >
+          Vendors
+        </NavLink>
       </li>
       <li>
-        <Link to={"/vendor"}>Vendors</Link>
-      </li>
-      <li>
-        <Link to={"/e-invites"}>E-invites</Link>
+        <NavLink
+          to="/e-invite"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-[#FF444A] underline" : ""
+          }
+        >
+          E-invite
+        </NavLink>
       </li>
     </>
   );
 
   return (
     <div className="w-11/12 mx-auto">
-      <div className="navbar bg-base-100">
+      <div className="navbar p-4 bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -52,6 +83,13 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to={"/"} className="text-xl md:text-3xl font-bold text-red-500">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/fluency/48/filled-like--v1.png"
+              alt="filled-like--v1"
+              className="inline"
+            />{" "}
             Eternal Wed
           </Link>
         </div>
@@ -59,12 +97,25 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <Link
-            to={"/login"}
-            className="btn btn-primary text-white border-none hover:text-white hover:bg-gray-400 bg-red-500"
-          >
-            Login
-          </Link>
+          {user ? (
+            <button>
+              <Link
+                onClick={handleLogout}
+                className="btn btn-primary text-white border-none hover:text-white hover:bg-gray-400 bg-red-500"
+              >
+                Logout
+              </Link>
+            </button>
+          ) : (
+            <button>
+              <Link
+                to={"/login"}
+                className="btn btn-primary text-white border-none hover:text-white hover:bg-gray-400 bg-red-500"
+              >
+                Login
+              </Link>
+            </button>
+          )}
         </div>
       </div>
     </div>
