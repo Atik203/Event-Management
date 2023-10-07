@@ -1,13 +1,14 @@
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { updateProfile } from "firebase/auth";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/Ai";
 import { Link } from "react-router-dom";
 import auth from "../../Firebase/firebase.config";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Register = () => {
-  // const auth = getAuth(app);
+  const { createUser } = useContext(AuthContext);
   const [RegError, setRegError] = useState("");
   const [showPass, setshowPass] = useState(false);
 
@@ -67,9 +68,10 @@ const Register = () => {
     }
 
     setRegError("");
-    createUserWithEmailAndPassword(auth, email, password)
+    createUser(email, password)
       .then((useCredential) => {
         const user = useCredential.user;
+
         toast.success("Registration Completed Successfully", {
           position: "top-right",
           autoClose: 5000,
@@ -79,6 +81,10 @@ const Register = () => {
           draggable: true,
           progress: undefined,
           theme: "light",
+        });
+        return updateProfile(user, {
+          displayName: name,
+          photoURL: photo,
         });
       })
       .catch((error) => setRegError(error.message));
@@ -155,18 +161,20 @@ const Register = () => {
               <input
                 type="submit"
                 value="Register"
-                className="btn btn-primary text-center"
+                className="btn bg-red-500 text-white text-center"
               />
             </div>
           </form>
           <p>
             Already have a account?{" "}
-            <Link className="hover:underline" to={"/login"}>
+            <Link className="hover:underline hover:text-red-500" to={"/login"}>
               Login now
             </Link>{" "}
           </p>
         </div>
-        {RegError && <p className="text-red-500 font-medium">{RegError}</p>}
+        {RegError && (
+          <p className="text-red-500 font-normal text-sm px-2">{RegError}</p>
+        )}
       </div>
       <ToastContainer></ToastContainer>
     </div>

@@ -1,5 +1,5 @@
-import { signInWithEmailAndPassword } from "firebase/auth";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { useContext, useRef, useState } from "react";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/Ai";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -15,7 +15,7 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const handleRegister = (e) => {
+  const handleSignIn = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
@@ -32,7 +32,16 @@ const Login = () => {
       .then((useCredential) => {
         const user = useCredential.user;
         navigate(location?.state ? location.state : "/");
-        alert("login successfully");
+        toast.success("Login Successfully", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
       })
       .catch((error) => setRegError(error.message));
   };
@@ -41,7 +50,7 @@ const Login = () => {
     <div className="hero-content flex-col lg:flex-row-reverse mt-10">
       <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-200">
         <div className="card-body">
-          <form onSubmit={handleRegister}>
+          <form onSubmit={handleSignIn}>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
@@ -86,19 +95,23 @@ const Login = () => {
               <input
                 type="submit"
                 value="Login"
-                className="btn btn-primary text-center"
+                className="btn text-white bg-red-500 text-center"
               />
             </div>
           </form>
           <p>
             New to website?{" "}
-            <Link className="hover:underline" to={"/register"}>
+            <Link
+              className="hover:underline hover:text-red-500"
+              to={"/register"}
+            >
               Register now
             </Link>{" "}
           </p>
         </div>
         {RegError && <p className="text-red-500 font-medium">{RegError}</p>}
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };

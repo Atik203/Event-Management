@@ -2,12 +2,28 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
-  console.log(user);
+  const { displayName, photoURL } = user || {};
 
   const handleLogout = () => {
-    logout().then().catch();
+    logout()
+      .then(
+        toast.success("Logout Successfully", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        })
+      )
+      .catch();
   };
 
   const links = (
@@ -58,7 +74,7 @@ const Navbar = () => {
 
   return (
     <div className="w-11/12 mx-auto">
-      <div className="navbar p-4 bg-base-100">
+      <div className="navbar p-6 bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -79,7 +95,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu font-medium menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               {links}
             </ul>
@@ -96,18 +112,30 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{links}</ul>
+          <ul className="menu font-medium menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
           {user ? (
-            <button>
-              <Link
-                onClick={handleLogout}
-                className="btn btn-primary text-white border-none hover:text-white hover:bg-gray-400 bg-red-500"
-              >
-                Logout
-              </Link>
-            </button>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+              <div className="mx-auto">
+                <img
+                  src={photoURL}
+                  className="h-12 w-12 rounded-full ml-5"
+                  alt=""
+                />
+                <h1>{displayName}</h1>
+              </div>
+              <div>
+                <button>
+                  <Link
+                    onClick={handleLogout}
+                    className="btn btn-primary text-white border-none hover:text-white hover:bg-gray-400 bg-red-500"
+                  >
+                    Logout
+                  </Link>
+                </button>
+              </div>
+            </div>
           ) : (
             <button>
               <Link
@@ -119,6 +147,7 @@ const Navbar = () => {
             </button>
           )}
         </div>
+        <ToastContainer></ToastContainer>
       </div>
     </div>
   );

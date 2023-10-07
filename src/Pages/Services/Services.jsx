@@ -30,7 +30,7 @@ const Services = () => {
   return (
     <div className="w-10/12 mx-auto mt-20 mb-24">
       <figure className=" rounded-lg">
-        <img className="w-full h-[650px]" src={img} />
+        <img className="w-full md:[400px] lg:h-[650px]" src={img} />
       </figure>
       <div className="card-body mt-5 p-0 text-center">
         <h2 className="card-title text-3xl font-bold text-red-500">{name}</h2>

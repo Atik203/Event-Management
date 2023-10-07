@@ -28,7 +28,11 @@ const AuthProvider = ({ children }) => {
 
   const signIn = (email, password) => {
     setLoading(true);
-    return signInWithEmailAndPassword(auth, email, password);
+    const credential = signInWithEmailAndPassword(auth, email, password);
+    const user = credential.user;
+    setUser(user);
+    setLoading(false);
+    return credential;
   };
 
   useEffect(() => {
@@ -38,8 +42,6 @@ const AuthProvider = ({ children }) => {
     });
     return () => unsubscribe();
   }, []);
-
-  console.log("AuthProvider Loading:", loading);
 
   const AuthInfo = { user, createUser, logout, signIn, loading };
 
