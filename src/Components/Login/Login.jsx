@@ -3,8 +3,11 @@ import "react-toastify/dist/ReactToastify.css";
 import { useContext, useRef, useState } from "react";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/Ai";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import auth from "../../Firebase/firebase.config";
+
 import { AuthContext } from "../../Provider/AuthProvider";
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { FcGoogle } from "react-icons/Fc";
+import auth from "./../../Firebase/firebase.config";
 
 const Login = () => {
   // const auth = getAuth(app);
@@ -14,6 +17,26 @@ const Login = () => {
   const { signIn } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
+
+  const handleGoogle = () => {
+    const provider = new GoogleAuthProvider();
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        const use = result.user;
+        navigate(location?.state ? location.state : "/");
+        toast.success("Login Successfully", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+      })
+      .catch((error) => setRegError(error.message));
+  };
 
   const handleSignIn = (e) => {
     e.preventDefault();
@@ -43,11 +66,23 @@ const Login = () => {
           theme: "light",
         });
       })
-      .catch((error) => setRegError(error.message));
+      .catch((error) => {
+        toast.error("Enter Valid Password or Email", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+        setRegError(error.message);
+      });
   };
 
   return (
-    <div className="hero-content flex-col lg:flex-row-reverse mt-10">
+    <div className="hero-content flex-col lg:flex-row-reverse my-10">
       <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-200">
         <div className="card-body">
           <form onSubmit={handleSignIn}>
@@ -109,7 +144,19 @@ const Login = () => {
             </Link>{" "}
           </p>
         </div>
-        {RegError && <p className="text-red-500 font-medium">{RegError}</p>}
+        {RegError && (
+          <p className="text-red-500 px-4 text-sm font-normal">{RegError}</p>
+        )}
+        <h1 className="text-center mb-4 text-base font-normal">or</h1>
+        <div
+          onClick={handleGoogle}
+          className="flex gap-4 text-base hover:bg-base-100 items-center p-4 mb-5 border-2 rounded-2xl w-80 mx-auto bg-gray-300 cursor-pointer hover:text-red-500"
+        >
+          <div className="text-xl">
+            <FcGoogle></FcGoogle>
+          </div>
+          <div>Login in with Google</div>
+        </div>
       </div>
       <ToastContainer></ToastContainer>
     </div>

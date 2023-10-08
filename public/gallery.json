@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/mJTjZWL/gallery1.jpg",
+    "title": "Beautiful Ceremony",
+    "description": "A breathtaking moment as the couple shares a tender moment in the golden hour."
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/N655byC/gallery2.jpg",
+    "title": "Joyful Celebration",
+    "description": "The newlyweds celebrate their love surrounded by friends and family."
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/f4vGyG4/gallery3.jpg",
+    "title": "Romantic Moment",
+    "description": "A tender moment between the bride and groom captured in the golden hour."
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/ccvNc3L/gallery4.jpg",
+    "title": "Elegant Reception",
+    "description": "Guests enjoy an elegant reception with stunning decor and delicious cuisine."
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/zF4gBPM/gallery5.jpg",
+    "title": "Dancing Under the Stars",
+    "description": "Couples and guests dance under the stars, creating magical moments."
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co/PDwy1CV/gallery6.jpg",
+    "title": "Charming Decor",
+    "description": "The venue adorned with charming decor that complements the wedding theme."
+  },
+  {
+    "id": 7,
+    "img": "https://i.ibb.co/bv8Xf0p/gallery7.jpg",
+    "title": "Emotional Toasts",
+    "description": "Heartfelt toasts and speeches bring tears of joy to the newlyweds and guests."
+  },
+  {
+    "id": 8,
+    "img": "https://i.ibb.co/zJdKGkC/gallery8.jpg",
+    "title": "Vintage Love",
+    "description": "A vintage-inspired photo capturing the timeless essence of love."
+  },
+  {
+    "id": 9,
+    "img": "https://i.ibb.co/ChkVqWX/gallery9.jpg",
+    "title": "Happily Ever After",
+    "description": "The couple departs, starting their journey into a lifetime of happiness together."
+  }
+]
