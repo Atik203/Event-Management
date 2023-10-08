@@ -10,6 +10,7 @@ import ErrorPage from "./Components/ErrorPage/ErrorPage";
 import Services from "./Pages/Services/Services";
 import AuthProvider from "./Provider/AuthProvider";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
+import GalleryDetails from "./Components/Gallery/GalleryDetails";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -37,6 +38,15 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: () => fetch("/service.json"),
+      },
+      {
+        path: "/gallery-details/:id",
+        element: (
+          <PrivateRoute>
+            <GalleryDetails></GalleryDetails>
+          </PrivateRoute>
+        ),
+        loader: () => fetch("/gallery.json"),
       },
     ],
   },

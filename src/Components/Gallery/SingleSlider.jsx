@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const SingleSlider = ({ photo }) => {
-  const { title, img } = photo;
+  const { title, img, id } = photo;
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -22,9 +23,13 @@ const SingleSlider = ({ photo }) => {
       {isHovered && (
         <div className="absolute inset-0 rounded-xl flex items-center justify-center">
           <div className="bg-black opacity-50 w-full h-full absolute rounded-xl"></div>
-          <button className="btn border-none hover:text-black absolute bg-red-500 text-white px-4 py-2 rounded">
+
+          <Link
+            to={`/gallery-details/${id}`}
+            className="btn border-none hover:text-black absolute bg-red-500 text-white px-4 py-2 rounded"
+          >
             More Details
-          </button>
+          </Link>
         </div>
       )}
     </div>

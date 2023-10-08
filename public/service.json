@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Photography & Video",
     "img": "https://i.ibb.co/wRbtM1q/photography.jpg",
-    "price": "$2,000 - $5,000",
+    "price": "2,000",
     "description": "Capture your special moments with our professional photography and video services.",
     "features": [
       "High-quality cinematic video production",
@@ -16,7 +16,7 @@
     "id": 2,
     "name": "Beauty & Makeup",
     "img": "https://i.ibb.co/cwTH8x0/makeup.jpg",
-    "price": "$500 - $1,500",
+    "price": "500",
     "description": "Enhance your natural beauty with our expert beauty and makeup services for the bride and bridal party.",
     "features": [
       "Professional makeup artists",
@@ -29,7 +29,7 @@
     "id": 3,
     "name": "Wedding Cake",
     "img": "https://i.ibb.co/2kDfHjv/wedding-cake.jpg",
-    "price": "$300 - $800",
+    "price": "800",
     "description": "Indulge in exquisite wedding cakes designed to match your theme and taste preferences.",
     "features": [
       "Custom cake designs",
@@ -42,7 +42,7 @@
     "id": 4,
     "name": "Catering",
     "img": "https://i.ibb.co/StF4jG3/catering.jpg",
-    "price": "$5,000 - $15,000",
+    "price": "15,000",
     "description": "Delight your guests with a delectable spread of dishes tailored to your wedding style and preferences.",
     "features": [
       "Customized menu options",
@@ -55,7 +55,7 @@
     "id": 5,
     "name": "Jewellery",
     "img": "https://i.ibb.co/tmjPZD2/ring.jpg",
-    "price": "$1,000 - $10,000",
+    "price": "10,000",
     "description": "Adorn yourself with exquisite bridal jewelry, enhancing your elegance on your special day.",
     "features": [
       "Handcrafted jewelry",
@@ -68,7 +68,7 @@
     "id": 6,
     "name": "Wedding Flowers",
     "img": "https://i.ibb.co/Ld98B3P/flowers.jpg",
-    "price": "$500 - $2,000",
+    "price": "500",
     "description": "Transform your venue with beautiful floral arrangements, adding a touch of nature to your celebration.",
     "features": [
       "Custom floral designs",

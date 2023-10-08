@@ -52,7 +52,7 @@ const Services = () => {
         </div>
 
         <div className="text-lg font-bold text-left">
-          <p>Price range: {price}$</p>
+          <p>Price: {price}$</p>
         </div>
       </div>
       <button onClick={handleCart} className="btn bg-red-400 mt-5 text-black">

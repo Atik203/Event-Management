@@ -4,7 +4,7 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 
 const Banner = () => {
   return (
-    <div className="w-11/12 mx-auto">
+    <div className="w-11/12 mx-auto ">
       <div className="relative">
         <img
           src={"https://i.ibb.co/HhPdhJ8/banner.jpg"}

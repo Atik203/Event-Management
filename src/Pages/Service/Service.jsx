@@ -27,7 +27,7 @@ const Services = ({ service }) => {
             <AiOutlineDollar></AiOutlineDollar>
           </div>
           <div className="">
-            <p>Price range: {price}$</p>
+            <p>Price: {price}$</p>
           </div>
         </div>
       </div>
