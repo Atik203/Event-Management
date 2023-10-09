@@ -34,7 +34,7 @@ const Home = () => {
       <h1 className="text-3xl mb-20 font-bold text-center mt-20">
         Some of Our Previous Works
       </h1>
-      <div>
+      <div className="mb-40">
         <Works></Works>
       </div>
     </div>

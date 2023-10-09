@@ -21,7 +21,7 @@ export default function Gallery() {
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
-        navigation={true}
+        // navigation={true}
         pagination={{
           clickable: true,
         }}

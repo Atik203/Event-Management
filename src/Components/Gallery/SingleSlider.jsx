@@ -15,13 +15,13 @@ const SingleSlider = ({ photo }) => {
 
   return (
     <div
-      className="rounded-xl hover:transition-opacity cursor-pointer relative"
+      className="relative rounded-xl overflow-hidden hover:transition-opacity"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <img src={img} className="w-full" alt="" />
       {isHovered && (
-        <div className="absolute inset-0 rounded-xl flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center">
           <div className="bg-black opacity-50 w-full h-full absolute rounded-xl"></div>
 
           <Link
