@@ -100,9 +100,11 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B: `Hi there, undefined`
 
 <i>Write your explanation here</i>
+
+The function `sayHi` expects an argument (name), but it is not provided when calling the function. Therefore, name is undefined.
 
 </p>
 </details>
@@ -128,9 +130,11 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: `3`
 
 <i>Write your explanation here</i>
+
+the if (num) condition check whether the value of num if true or false. Since the first number is `0` then it is false.That's why answer is C.
 
 </p>
 </details>
