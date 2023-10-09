@@ -83,7 +83,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/invite-card",
-        element: <InviteCards></InviteCards>,
+        element: (
+          <PrivateRoute>
+            <InviteCards></InviteCards>
+          </PrivateRoute>
+        ),
         loader: () => fetch("/card.json"),
       },
     ],
