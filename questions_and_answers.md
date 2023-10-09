@@ -18,9 +18,11 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B: `ReferenceError: greetign is not defined`
 
 <i>Write your explanation here</i>
+
+Here the variable `greeting` is declared, but there is a typo (`greetign`) in the question. As a result, a ReferenceError will occur.
 
 </p>
 </details>
