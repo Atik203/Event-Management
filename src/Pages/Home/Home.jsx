@@ -2,7 +2,8 @@ import Banner from "../../Components/Banner/Banner";
 import { useLoaderData } from "react-router-dom";
 import Service from "../Service/Service";
 import Gallery from "../../Components/Gallery/Gallery";
-import Venues from "../../Components/Venues/Venues";
+
+import Works from "../Works/Works";
 
 const Home = () => {
   const services = useLoaderData();
@@ -29,6 +30,12 @@ const Home = () => {
       </p>
       <div className="mb-20">
         <Gallery></Gallery>
+      </div>
+      <h1 className="text-3xl mb-20 font-bold text-center mt-20">
+        Some of Our Previous Works
+      </h1>
+      <div>
+        <Works></Works>
       </div>
     </div>
   );

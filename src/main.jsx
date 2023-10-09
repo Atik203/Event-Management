@@ -12,8 +12,8 @@ import AuthProvider from "./Provider/AuthProvider";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import GalleryDetails from "./Components/Gallery/GalleryDetails";
 import Venues from "./Components/Venues/Venues";
-import Vendors from "./Pages/Vendors/Vendors";
 import AboutUs from "./Pages/AboutUs/AboutUs";
+import WorkDetails from "./Pages/WorkDetails/WorkDetails";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -56,12 +56,17 @@ const router = createBrowserRouter([
         element: <Venues></Venues>,
       },
       {
-        path: "/vendor",
-        element: <Vendors></Vendors>,
-      },
-      {
         path: "/about",
         element: <AboutUs></AboutUs>,
+      },
+      {
+        path: "/work-details/:id",
+        element: (
+          <PrivateRoute>
+            <WorkDetails></WorkDetails>
+          </PrivateRoute>
+        ),
+        loader: () => fetch("/work.json"),
       },
     ],
   },

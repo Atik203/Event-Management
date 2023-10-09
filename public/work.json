@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/mNjbwHS/im1.jpg",
+    "name": "Dhaka Delights Events",
+    "description": "At Dhaka Delights Events, we take pride in curating unforgettable wedding experiences. Our team of seasoned professionals is dedicated to making your special day extraordinary. Immerse yourself in the magic of our exquisite decor, capture timeless moments with our professional photography, and choose from our customized packages designed for a perfect celebration.",
+    "priceRange": "$10000 - $15000",
+    "features": [
+      "Exquisite Decor",
+      "Professional Photography",
+      "Customized Packages"
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/mhGCXXr/im2.jpg",
+    "name": "Bengal Bliss Weddings",
+    "description": "Bengal Bliss Weddings specializes in crafting unique and elegant wedding experiences in Bangladesh. Our dedicated team is committed to making every detail of your wedding memorable. Experience venues with scenic views, indulge in creative floral arrangements, and enjoy quality catering for a seamless and stress-free planning process.",
+    "priceRange": "$15000 - $20000",
+    "features": [
+      "Venues with Scenic Views",
+      "Creative Floral Arrangements",
+      "Quality Catering"
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/wNwsnxs/im3.jpg",
+    "name": "Luxury Celebrations BD",
+    "description": "Luxury Celebrations BD offers the epitome of luxury wedding experiences in Bangladesh. Our opulent decor and top-notch services bring sophistication to your wedding day. Immerse yourself in the lavish atmosphere of our luxurious venues, exclusive event planning, and premium services.",
+    "priceRange": "$25000 - $30000",
+    "features": [
+      "Luxurious Venues",
+      "Exclusive Event Planning",
+      "Premium Services"
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/TbbT2zg/im4.jpg",
+    "name": "Cultural Harmony Events",
+    "description": "Cultural Harmony Events is your go-to choice for a traditional and cultural wedding experience in Bangladesh. We are passionate about preserving heritage and offer services that blend modern trends with traditional elements. Experience our cultural wedding specialization, traditional decor, and customized themes.",
+    "priceRange": "$20000 - $25000",
+    "features": [
+      "Cultural Wedding Specialization",
+      "Traditional Decor",
+      "Customized Themes"
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/8XT3JHs/im5.jpg",
+    "name": "Creative Touch Events",
+    "description": "Creative Touch Events is renowned for its innovative approach to wedding planning in Bangladesh. Our creative professionals bring fresh ideas to the table, ensuring that your wedding is not only beautiful but also uniquely tailored to your preferences. Immerse yourself in our creative event design, artistic photography, and custom theme development.",
+    "priceRange": "$30000 - $35000",
+    "features": [
+      "Creative Event Design",
+      "Artistic Photography",
+      "Custom Theme Development"
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/BNRvB08/im6.jpg",
+    "name": "Elegance and Simplicity Weddings",
+    "description": "Elegance and Simplicity Weddings offer a blend of elegance and simplicity in wedding planning in Bangladesh. We create weddings that are both refined and heartfelt, paying attention to detail and ensuring personalization. Immerse yourself in our elegant venues, personalized wedding planning, and quality service.",
+    "priceRange": "$18000 - $22000",
+    "features": [
+      "Elegant Venues",
+      "Personalized Wedding Planning",
+      "Quality Service"
+    ]
+  }
+]
