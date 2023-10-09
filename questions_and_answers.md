@@ -18,11 +18,11 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: B: `ReferenceError: greetign is not defined`
+#### Answer: B: `{}`
 
 <i>Write your explanation here</i>
 
-Here the variable `greeting` is declared, but there is a typo (`greetign`) in the question. As a result, a ReferenceError will occur.
+If we created an empty object on the global object! When we mistyped `greeting` as `greetign`, the JS interpreter think it as `greetign`.
 
 </p>
 </details>
@@ -45,9 +45,11 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: `"12"`
 
 <i>Write your explanation here</i>
+
+In JavaScript, when we use the `+` operator with a number and a string, JavaScript will attempt to convert the number to a string, and then perform string concatenation. Also JS is dynamically typed language.So Values can automatically be converted into another type.
 
 </p>
 </details>
@@ -71,9 +73,11 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: `['🍕', '🍫', '🥑', '🍔']`
 
 <i>Write your explanation here</i>
+
+Modifying the property of an object does not affect the original array. That's why answer is A. Also it doesn't have a reference to `food` array in the same memory space.
 
 </p>
 </details>
