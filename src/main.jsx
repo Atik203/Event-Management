@@ -11,6 +11,9 @@ import Services from "./Pages/Services/Services";
 import AuthProvider from "./Provider/AuthProvider";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import GalleryDetails from "./Components/Gallery/GalleryDetails";
+import Venues from "./Components/Venues/Venues";
+import Vendors from "./Pages/Vendors/Vendors";
+import AboutUs from "./Pages/AboutUs/AboutUs";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -47,6 +50,18 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: () => fetch("/gallery.json"),
+      },
+      {
+        path: "/venue",
+        element: <Venues></Venues>,
+      },
+      {
+        path: "/vendor",
+        element: <Vendors></Vendors>,
+      },
+      {
+        path: "/about",
+        element: <AboutUs></AboutUs>,
       },
     ],
   },

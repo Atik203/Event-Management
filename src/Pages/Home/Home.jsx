@@ -2,6 +2,7 @@ import Banner from "../../Components/Banner/Banner";
 import { useLoaderData } from "react-router-dom";
 import Service from "../Service/Service";
 import Gallery from "../../Components/Gallery/Gallery";
+import Venues from "../../Components/Venues/Venues";
 
 const Home = () => {
   const services = useLoaderData();

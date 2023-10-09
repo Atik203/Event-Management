@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/J2N5jHw/card-1.jpg",
+    "name": "Traditional Elegance",
+    "type": "Traditional",
+    "priceRange": "$$$",
+    "price": "Starting from $3.50 per card",
+    "size": "Standard",
+    "material": "High-Quality Paper",
+    "features": ["Embossed Details", "Gold Foil Accents"]
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/nzNmH2b/card-2.jpg",
+    "name": "Modern Bliss",
+    "type": "Modern",
+    "priceRange": "$$",
+    "price": "Starting from $2.00 per card",
+    "size": "Customizable",
+    "material": "Matte Cardstock",
+    "features": ["Sleek Design", "Custom Printing Options"]
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/qnCD1Q1/card-3.jpg",
+    "name": "Vintage Romance",
+    "type": "Vintage",
+    "priceRange": "$$$",
+    "price": "Starting from $3.75 per card",
+    "size": "Standard",
+    "material": "Linen Paper",
+    "features": ["Lace Embellishments", "Soft Color Palette"]
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/qYvKLc7/card-4.jpg",
+    "name": "Contemporary Chic",
+    "type": "Contemporary",
+    "priceRange": "$$$",
+    "price": "Starting from $3.50 per card",
+    "size": "Standard",
+    "material": "Glossy Cardstock",
+    "features": ["Minimalist Design", "Foil Stamping"]
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/n61bjFK/card-5.jpg",
+    "name": "Regal Splendor",
+    "type": "Royal",
+    "priceRange": "$$$$",
+    "price": "Starting from $5.00 per card",
+    "size": "Large",
+    "material": "Velvet Paper",
+    "features": ["Embossed Gold Borders", "Rich Color Palette"]
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/2nWMmqS/card-6.jpg",
+    "name": "Whimsical Wonderland",
+    "type": "Whimsical",
+    "priceRange": "$$",
+    "price": "Starting from $2.25 per card",
+    "size": "Customizable",
+    "material": "Textured Paper",
+    "features": ["Illustrative Design", "Pastel Tones"]
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/mvJDMzD/card-7.jpg",
+    "name": "Classic Harmony",
+    "type": "Classic",
+    "priceRange": "$$$",
+    "price": "Starting from $3.25 per card",
+    "size": "Standard",
+    "material": "Pearlescent Cardstock",
+    "features": ["Embossed Details", "Satin Ribbon"]
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/J2BDvFY/card-8.jpg",
+    "name": "Rustic Elegance",
+    "type": "Rustic",
+    "priceRange": "$$",
+    "price": "Starting from $2.50 per card",
+    "size": "Customizable",
+    "material": "Kraft Paper",
+    "features": ["Burlap Accents", "Vintage Fonts"]
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/dkRTfS3/card-9.jpg",
+    "name": "Bohemian Dreams",
+    "type": "Bohemian",
+    "priceRange": "$$$",
+    "price": "Starting from $3.75 per card",
+    "size": "Standard",
+    "material": "Recycled Paper",
+    "features": ["Feather Embellishments", "Watercolor Elements"]
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co/R7d7NfG/card-10.jpg",
+    "name": "Golden Elegance",
+    "type": "Luxury",
+    "priceRange": "$$$$",
+    "price": "Starting from $5.50 per card",
+    "size": "Large",
+    "material": "Metallic Gold Paper",
+    "features": ["Intricate Gold Foil Patterns", "Custom Printing"]
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co/mSjvpLK/card-11.jpg",
+    "name": "Enchanting Garden",
+    "type": "Garden",
+    "priceRange": "$$$",
+    "price": "Starting from $3.50 per card",
+    "size": "Standard",
+    "material": "Silk Cardstock",
+    "features": ["Floral Illustrations", "Soft Pastel Colors"]
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co/6svB7RG/card-12.jpg",
+    "name": "Sapphire Serenity",
+    "type": "Elegant",
+    "priceRange": "$$$",
+    "price": "Starting from $3.75 per card",
+    "size": "Standard",
+    "material": "Sapphire Blue Velvet",
+    "features": ["Velvet Texture", "Embossed Silver Accents"]
+  }
+]

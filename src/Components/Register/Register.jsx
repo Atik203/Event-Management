@@ -82,6 +82,9 @@ const Register = () => {
           progress: undefined,
           theme: "light",
         });
+        setTimeout(() => {
+          window.location.reload();
+        }, 2000);
         return updateProfile(user, {
           displayName: name,
           photoURL: photo,

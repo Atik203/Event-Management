@@ -51,22 +51,22 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to="/vendor"
+          to="/invite-card"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-[#FF444A] underline" : ""
           }
         >
-          Vendors
+          Invite Card
         </NavLink>
       </li>
       <li>
         <NavLink
-          to="/e-invite"
+          to="/about"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-[#FF444A] underline" : ""
           }
         >
-          E-invite
+          About Us
         </NavLink>
       </li>
     </>

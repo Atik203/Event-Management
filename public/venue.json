@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "name": "Elegant Gardens",
+    "image": "https://i.ibb.co/SQ91ZxP/venue-1.jpg",
+    "price": "$10,000",
+    "capacity": "300 guests",
+    "location": "Dhaka",
+    "features": ["Indoor/Outdoor Space", "Garden Views", "Catering Available"],
+    "description": "Elegant Gardens, located in the heart of Dhaka, is a picturesque venue that seamlessly blends indoor luxury with outdoor charm. The venue offers a stunning garden setting with lush greenery and beautiful floral arrangements, providing the perfect backdrop for a romantic celebration. With a capacity for 300 guests, Elegant Gardens ensures an intimate yet grand experience. The venue provides catering services, allowing you to savor exquisite cuisine while enjoying the serene garden views."
+  },
+  {
+    "id": 2,
+    "name": "Royal Palace",
+    "image": "https://i.ibb.co/1bgPH2d/venue-2.jpg",
+    "price": "$15,000",
+    "capacity": "500 guests",
+    "location": "Chittagong",
+    "features": ["Grand Ballroom", "Exquisite Decor", "Full-Service Staff"],
+    "description": "Royal Palace, situated in the vibrant city of Chittagong, is a regal venue that exudes grandeur and sophistication. The grand ballroom is adorned with exquisite decor, creating a royal ambiance for your special day. With a capacity for 500 guests, Royal Palace offers spaciousness without compromising on the intimate atmosphere. The venue's full-service staff ensures every detail is taken care of, allowing you to enjoy a truly majestic celebration."
+  },
+  {
+    "id": 3,
+    "name": "Serene Resort",
+    "image": "https://i.ibb.co/pjW7yBQ/venue-3.jpg",
+    "price": "$12,000",
+    "capacity": "400 guests",
+    "location": "Sylhet",
+    "features": [
+      "Lakeside Venue",
+      "Luxurious Accommodations",
+      "Event Planning"
+    ],
+    "description": "Serene Resort, nestled in the scenic landscapes of Sylhet, offers a magical lakeside venue for a tranquil and luxurious wedding experience. The resort provides lavish accommodations for you and your guests, ensuring a comfortable and memorable stay. With a capacity for 400 guests, Serene Resort also offers comprehensive event planning services, allowing you to relax and enjoy the beauty of your surroundings on your special day."
+  },
+  {
+    "id": 4,
+    "name": "Golden Pavilion",
+    "image": "https://i.ibb.co/Sw4X7SH/venue-4.jpg",
+    "price": "$18,000",
+    "capacity": "600 guests",
+    "location": "Rajshahi",
+    "features": [
+      "Golden Theme Decor",
+      "Spacious Halls",
+      "Customizable Packages"
+    ],
+    "description": "Golden Pavilion, located in the historical city of Rajshahi, is a venue that radiates opulence with its golden theme decor. The spacious halls provide a versatile canvas for creating a customized and elegant celebration. With a generous capacity for 600 guests, Golden Pavilion offers flexibility and grandeur. The venue's customizable packages ensure that every detail of your wedding reflects your unique style and preferences."
+  },
+  {
+    "id": 5,
+    "name": "Enchanted Gardens",
+    "image": "https://i.ibb.co/30f11pJ/venue-5.jpg",
+    "price": "$14,000",
+    "capacity": "450 guests",
+    "location": "Khulna",
+    "features": [
+      "Enchanting Outdoor Spaces",
+      "Professional Staff",
+      "Full Bar Services"
+    ],
+    "description": "Enchanted Gardens, situated in the enchanting city of Khulna, captivates with its magical outdoor spaces and professional services. The venue's enchanting gardens provide a romantic setting for exchanging vows, while the professional staff ensures a seamless and stress-free celebration. With a capacity for 450 guests, Enchanted Gardens also offers full bar services, allowing you to raise a toast to your love in style."
+  },
+  {
+    "id": 6,
+    "name": "Crystal Ballroom",
+    "image": "https://i.ibb.co/YZ4KKdH/venue-6.jpg",
+    "price": "$16,000",
+    "capacity": "550 guests",
+    "location": "Barisal",
+    "features": [
+      "Crystal Chandeliers",
+      "State-of-the-Art Audiovisual Equipment",
+      "Catering Services"
+    ],
+    "description": "Crystal Ballroom, located in the charming city of Barisal, is a venue that combines timeless elegance with modern amenities. The crystal chandeliers create a sophisticated ambiance, complemented by state-of-the-art audiovisual equipment for a memorable celebration. With a capacity for 550 guests, Crystal Ballroom ensures a grand and visually stunning experience. The venue's catering services add a culinary delight to your wedding, making it an unforgettable affair."
+  }
+]

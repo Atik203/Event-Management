@@ -4,8 +4,8 @@ import Footer from "../Footer/Footer";
 
 const Root = () => {
   return (
-    <div className="bg-base-100">
-      <div>
+    <div className="bg-base-100 flex min-h-screen flex-col">
+      <div className="flex-grow">
         <Navbar></Navbar>
         <Outlet></Outlet>
       </div>
