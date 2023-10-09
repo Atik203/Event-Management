@@ -14,6 +14,7 @@ import GalleryDetails from "./Components/Gallery/GalleryDetails";
 import Venues from "./Components/Venues/Venues";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import WorkDetails from "./Pages/WorkDetails/WorkDetails";
+import VenueDetails from "./Pages/VenueDetails/VenueDetails";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -53,7 +54,13 @@ const router = createBrowserRouter([
       },
       {
         path: "/venue",
-        element: <Venues></Venues>,
+        element: (
+          <PrivateRoute>
+            {" "}
+            <Venues></Venues>
+          </PrivateRoute>
+        ),
+        loader: () => fetch("/venue.json"),
       },
       {
         path: "/about",
@@ -67,6 +74,11 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: () => fetch("/work.json"),
+      },
+      {
+        path: "/venue-details/:id",
+        element: <VenueDetails></VenueDetails>,
+        loader: () => fetch("/venue.json"),
       },
     ],
   },
